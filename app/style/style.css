@@ -141,6 +141,14 @@ textarea{
   outline: none;
   resize: none;
 }
+#contact-submit{
+  background: rgb(123, 191, 197);
+  width: 100px;
+  height: 35px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
 /* Qoutes/img section */
 .section-container{
   width: 70%;
@@ -363,8 +371,11 @@ footer a:hover{
     flex-wrap: wrap;
     width: 100%;
   }
-  .prev, .next {
-    top: 50%;
+  .prev{
+    left: 20%;
+  }
+  .next{
+    right: 20%;
   }
 }
 @media screen and (max-width: 768px){
@@ -407,6 +418,14 @@ footer a:hover{
   .mySlides img{
     width: 80%;
   }
+ .next{
+   top:20%;
+   right: 13%;
+ }
+ .prev{
+   top: 20%;
+   left: 13%;
+ }
 }
 @media screen and (max-width: 576px){
   .section-container{
@@ -461,9 +480,11 @@ footer a:hover{
    }
    .prev{
     left: 0;
+    top: 20%;
   }
   .next{
     right: 0;
+    top: 20%;
   }
   .numbertext{
     display: none;
@@ -474,6 +495,7 @@ footer a:hover{
     font-size: 80px;
     top: 110%;
   }
+  
   .social{
     margin:auto;
     font-size: 30px;
